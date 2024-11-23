@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form><!--to send data to backend-->
+        <fieldset>
+            <legend>personal info.</legend>
+                <label for="">User Name:</label>
+                <input type="text" name="" id="" required maxlength="10" placeholder="User Name"><!--set text../ required to let user must write text../ disabled to stop input../ maxlength to maximum (n) charecters../ placeholder to whrite something holder in the input-->
+                <br><br>
+                <label for="">Password:</label>
+                <input type="password" name="" id="" required placeholder="Password">
+                <br><br>
+                <input type="number" required placeholder="age" min="20" max="25"><!--minmum number and maxmum number-->
+                <br><br>
+                <input type="date" required>
+                <br><br>
+                <input type="email"><!---->
+                <br><br>
+
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate" required min="2000-01-01" max="2007-12-31">
+                <br><br>
+                <input type="radio" name="gender" value="Male"><!--name must be same../ value will sent to backend-->
+                <label>Male</label>
+                <input type="radio" name="gender" value="Female"><!--name must be same../ value will sent to backend-->
+                <label>Female</label>
+                <br><br>
+                <input type="checkbox" name="l1" value="c++"><!--name must maybe not same-->
+                <label>C++</label>
+                <input type="checkbox" name="l2" value="java">
+                <label>Jave</label>
+                <input type="checkbox" name="l3" value="python">
+                <label>Python</label>
+
+                <br><br>
+                <input type="submit" value="Save data"><!--send data../ value here will change the button name in the page-->
+                <input type="reset"><!--delete witch you write in inputs-->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <label>Choose Country</label>
+            <select size="2" multiple> <!--size scroll 2 values../ multple select one or more values using ctrl-->
+                <option value="JO">Jordan</option>
+                <option value="KU">Kuwait</option>
+                <option value="OM">Oman</option>
+                <option value="PA">Palestine</option>
+            </select>
+        </fieldset>
+        <br><br>
+        <textarea rows="5" cols="10"></textarea>
+        <br><br>
+        <button type="button" onclick="alert('hello there')">Click me</button>
+    </form>
+
+    <video controls width="320" height="240" autoplay muted>
+        <source src="191159-889246512_tiny.mp4" type="video/mp4">
+        <source src="191159-889246512_tiny.mp4" type="video/ogg">
+    </video>
+    <audio controls>
+        <source src="" type="audio/mpeg">
+    </audio>
+
+    <iframe  width="560" height="315" src="https://www.youtube.com/embed/ZvkL1pI0quE?si=PjLJ5Jb2pjYDCFXh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--must write embed/ الاسم يلي بعد watch او اعمل شير من يوتيوب بعدين اكبس على embed-->
+
+    <video controls>
+        <source src="../lecture 2/191159-889246512_tiny.mp4"> <!-- ../ -> ترجعني لل روت وهي فول ستاك -->
+    </video>
+
+    <article><!--same as div-->
+        <p>all products</p>
+        <section><p>product 1</p></section>
+        <section><p>product 2</p></section>
+        <section><p>product 3</p></section><!--same as div-->
+    </article>
+    <footer><p>this is a paragraph</p></footer><!--same as div-->
+
+    
+
+</body>
+</html>
